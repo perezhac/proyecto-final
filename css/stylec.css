@@ -1,0 +1,249 @@
+* {
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  .fondo-cabezera {
+    width: 100%;
+    background-color: #003300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.contenedor-logo {
+    width: 50px;
+    padding-bottom: 10px;
+}
+
+.contenedor-logo img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.Cabezera {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.ul_links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.ul_links li {
+    padding: 10px 0;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+  color: black;
+}
+  
+  .contacto {
+    padding: 50px 20px;
+    background-color: #0f172a; 
+    color: #ffffff; 
+  }
+  
+  .contacto-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contacto-info,
+  .contacto-formulario {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contacto-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #38bdf8; 
+  }
+  
+  .contacto-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contacto-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  .contacto-redes {
+    margin-top: 20px;
+  }
+  
+  .contacto-redes a {
+    margin-right: 15px;
+    display: inline-block;
+  }
+  
+  .contacto-redes img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .contacto-formulario h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+  }
+  
+  .contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacto-formulario input,
+  .contacto-formulario textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1e293b; 
+    color: #ffffff;
+  }
+  
+  .contacto-formulario input::placeholder,
+  .contacto-formulario textarea::placeholder {
+    color: #94a3b8; 
+  }
+  
+  .contacto-formulario button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 4px;
+    color: #0f172a;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contacto-formulario button:hover {
+    background-color: #0284c7;
+  }
+  
+
+  @media (max-width: 768px) {
+    .contacto-contenedor {
+      flex-direction: column;
+    }
+  }
+  
+
+  .footer {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-section a:hover {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .footer-section {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }

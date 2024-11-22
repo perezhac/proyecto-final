@@ -1,0 +1,409 @@
+* {
+    border: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.fondo-cabezera {
+    width: 100%;
+    background-color: #003300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.contenedor-logo {
+    width: 50px;
+    padding-bottom: 10px;
+}
+
+.contenedor-logo img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.Cabezera {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.ul_links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.ul_links li {
+    padding: 10px 0;
+}
+
+.link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+  color: black;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+
+  .seccion-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 20px;
+    height: 500px;
+  }
+  
+  .texto {
+    max-width: 500px;
+  }
+  
+  .titulo-1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .seccion-1 p {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .botones {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .video-1 video {
+    width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+  }
+  
+
+  .seccion-2 {
+    padding: 20px;
+    height: 300px;
+  }
+  
+  .header-categoria {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .botones-market {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .arrow-button {
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .categorias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 100px;
+  }
+  
+  .categoria-item {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+
+  .seccion-3 {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .ventajas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .imagen-placeholder img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    background-color: #ddd;
+    display: block;
+    margin: 20px 0;
+  }
+  
+  .tabla-ventajas {
+    display: flex;
+    right: 20px; /* Ajusta según lo necesites */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%; /* Ajusta el ancho */
+    padding: 10px;
+  }
+  
+  .tabla-ventajas table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabla-ventajas th,
+  .tabla-ventajas td {
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tabla-ventajas th {
+    background-color: #4CAF50; /* Verde atractivo */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .tabla-ventajas tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Fila alterna */
+  }
+  
+  .tabla-ventajas tbody tr:hover {
+    background-color: #ddd; /* Efecto hover */
+  }
+  
+  .tabla-ventajas td {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Animación (Opcional) */
+  .tabla-ventajas {
+    animation: slideInRight 0.8s ease;
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+
+    .seccion-1 {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .texto {
+      max-width: 100%;
+    }
+  
+    .video-1 video {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .header-categoria {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .categorias {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .categoria-item {
+      font-size: 20px;
+    }
+  
+
+    .ventajas {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .tabla-ventajas table {
+      max-width: 100%;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .titulo-1 {
+      font-size: 20px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  
+    .arrow-button {
+      font-size: 16px;
+    }
+  
+    .categoria-item {
+      font-size: 18px;
+    }
+  
+    .imagen-placeholder img {
+      max-width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+
+.footer {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.footer-section {
+    max-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-section a:hover {
+    color: #ccc;
+}
+
+      
+@media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .footer-section {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+      
+  img:hover {
+    transform: scale(1.15); 
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  
